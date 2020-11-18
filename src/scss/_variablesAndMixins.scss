@@ -19,7 +19,7 @@ $border-default: 2px solid $border;
 }
 
 @mixin container {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
   padding: $s-default;
 }

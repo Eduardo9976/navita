@@ -13,3 +13,7 @@
 
 Se tudo ocorreu como de forma esperada nesse momento  você já conseguirá visualizar o projeto.
 
+### Comodidade
+Para facilitar o acesso ao resultado final do teste, o projeto foi hospedado em uma plataforma on-line, segue o link abaixo.
+
+https://navita-9976.web.app/
