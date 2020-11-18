@@ -1,0 +1,60 @@
+$text: #5A5C69;
+$background: #F7F8FB;
+$headerAndFooter: #FFFFFF;
+$btn: #4E73DF;
+$btnActive: #1CC88A;
+$card: #F8F9FC;
+$shadowColor: rgba(58, 59, 69, .15);
+$border: #E3E6F0;
+
+$fonte-1: 'Roboto',
+sans-serif;
+$box-shadow: 0px 0px 12px 8px $shadowColor;
+$s-default: 10px;
+$border-default: 2px solid $border;
+
+
+@function em($pixel, $contexto: 16) {
+  @return $pixel / $contexto+em;
+}
+
+@mixin container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: $s-default;
+}
+
+@mixin tipo-1($size, $color: $text) {
+  font-family: $fonte-1;
+  color: $color;
+
+  @if $size==12 {
+    font-size: em(12);
+    line-height: em(30, 12);
+  }
+
+  @if $size==14 {
+    font-size: em(14);
+    line-height: em(30, 14);
+  }
+
+  @else if $size==16 {
+    font-size: em(16);
+    line-height: em(30);
+  }
+
+  @else if $size==18 {
+    font-size: em(18);
+    line-height: em(30, 18);
+  }
+
+  @else if $size==24 {
+    font-size: em(24);
+    line-height: em(30, 24);
+  }
+
+  @else if $size==28 {
+    font-size: em(28);
+    line-height: em(30, 28);
+  }
+}

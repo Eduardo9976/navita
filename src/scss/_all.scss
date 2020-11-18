@@ -1,0 +1,25 @@
+body {
+  @include tipo-1(16);
+  background: $background;
+}
+
+.router-link-exact-active {
+  color: $btnActive;
+}
+
+.v-enter-active {
+  animation: slide 1s;
+  transition: opacity 1s;
+}
+
+.v-leave-active {
+  animation: slide 1s reverse;
+  transition: opacity 1s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+}

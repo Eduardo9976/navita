@@ -1,0 +1,10 @@
+header {
+  background: $headerAndFooter;
+  box-shadow: $box-shadow;
+
+  a {
+    display: block;
+    @include container;
+    @include tipo-1(24);
+  }
+}
